@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../vendors/angular-material/angular-material.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../vendors/angular/angular.min.js"></script>
+    <script src="../vendors/angular-animate/angular-animate.js"></script>
+    <script src="../vendors/angular-aria/angular-aria.js"></script>
+    <script src="../vendors/angular-material/angular-material.js"></script>
+    <link href="../vendors/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet">
+    <script src="../scripts/client.js"></script>
+    <link rel="stylesheet" href="../styles/style.css"/>
+    <title>Christopher Keller</title>
+  </head>
+  <body>
+    <div id="contentWrap" layout="row">
+
+      <div id="leftColumn" flex="5"></div>
+      <div id="mainContent" flex="90" layout="column" layout-align="start center">
+        <div class="emptyDiv"></div>
+        <div class="imgWrapper">
+          <img src="assets/goodPicture.jpg" alt="Christopher J Keller">
+        </div>
+        <div>
+          <h1 id="myName">Christopher J Keller</h1>
+        </div>
+        <div layout="row">
+          <div flex="25"></div>
+          <div flex="50" layout="column">
+            <p>
+              The desire to solve problems in an orderly manner is what gets
+              me up in the morning, and I would be glad to talk about how I can
+              help solve the code problems your client or company may be facing.
+            </p>
+            <p>
+              Other passions of mine include camping, visual arts, and
+              all the "bad dinner conversation" topics:
+              <a href="http://solidarity-party.org/">politics</a>,
+              <a href="http://www.good-truth.com/">philosophy</a>, etc.
+            </p>
+            <p>
+              Please feel free to check out my
+              <a href="github.com/CJamesKeller">Github</a> or
+              <a href="https://www.linkedin.com/in/christopher-j-keller/">LinkedIn</a>
+              accounts, or to reach out to me via
+              <a href="mailto:cjameskeller@gmail.com">email</a>.
+            </p>
+            <div id="buttonLinks" layout="row" layout-align="center center">
+              <md-button class="md-fab" aria-label="Github"
+                href="https://www.github.com/cjameskeller">
+                <md-icon class="mdi mdi-github-circle"></md-icon>
+              </md-button>
+              <md-button class="md-fab" aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/christopher-j-keller/">
+                <md-icon class="mdi mdi-linkedin-box"></md-icon>
+              </md-button>
+              <md-button class="md-fab" aria-label="Email"
+                href="mailto:cjameskeller@gmail.com">
+                <md-icon class="mdi mdi-gmail"></md-icon>
+              </md-button>
+            </div>
+          </div>
+          <div flex="25"></div>
+        </div>
+        <div class="emptyDiv"></div>
+      </div>
+      <div id="rightColumn" flex="5"></div>
+
+    </div>
+  </body>
+</html>

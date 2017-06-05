@@ -1,0 +1,63 @@
+body {
+  font-family: Georgia, serif;
+  font-size: calc(0.5vw + 1vh);
+  color: #203038;
+}
+
+#contentWrap {
+  background-color: #407078;
+  min-height: 100%;
+}
+
+.emptyDiv {
+  padding: 20px;
+}
+
+#mainContent {
+  background-color: #F0F0E0;
+}
+
+.imgWrapper {
+  max-width: calc(17.5vmax + 10vh);
+  height: calc(17.5vmax + 10vh);
+  overflow: hidden;
+  border-radius: calc(25vh - 12vw);
+  border: 5px solid #407078;
+}
+
+.imgWrapper img {
+  max-width: calc(40vmax + 10vh);
+  margin-left: calc(-17.5vmax + 5vw);
+  margin-top: -9.5vmax;
+}
+
+p {
+  font-size: calc(0.25vw + 2vh);
+  margin-top: 0;
+}
+
+a {
+  color: #407078;
+}
+
+.md-button.md-fab,
+.md-button.md-fab:not([disabled]):visited {
+  background-color: #A0D8C0;
+}
+
+.md-button.md-fab md-icon,
+.md-button.md-fab:visited md-icon {
+  color: #203038;
+}
+
+.md-button.md-fab:not([disabled]):hover,
+.md-button.md-fab:not([disabled]):active,
+.md-button.md-fab:not([disabled]):focus {
+  background-color: #407078;
+}
+
+.md-button.md-fab:hover md-icon,
+.md-button.md-fab:active md-icon,
+.md-button.md-fab:focus md-icon {
+  color: #F0F0E0;
+}
