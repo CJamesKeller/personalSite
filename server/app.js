@@ -10,7 +10,3 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get('/', function(req, res) {
   res.sendFile(path.resolve('server/public/views/index.html'));
 });
-
-app.listen(port, function() {
-  console.log("Listening on port: ", port);
-});
