@@ -6,25 +6,30 @@ myApp.controller("BackgroundController", [function() {
   const REFRESH_DURATION = 10000;     // In milliseconds
   const RANDOM_ALPHA     = undefined; // Or global set to between 0 and 1
 
-  var refreshTimeout;
-  var numPointsX;
-  var numPointsY;
-  var unitWidth;
-  var unitHeight;
-  var points;
+  let refreshTimeout;
+  let numPointsX;
+  let numPointsY;
+  let unitWidth;
+  let unitHeight;
+  let points;
+  let backgroundHeight;
+  let backgroundWidth;
+
+  backgroundHeight = (1.1 * screen.height);
+  backgroundWidth = window.innerWidth;
 
   function onLoad() {
 
       var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-      svg.setAttribute('width', window.innerWidth);
-      svg.setAttribute('height', window.innerHeight);
+      svg.setAttribute('width', backgroundWidth);
+      svg.setAttribute('height', backgroundHeight);
       document.querySelector('#bg').appendChild(svg);
 
-      var unitSize = (window.innerWidth + window.innerHeight) / UNITS_PER_WINDOW;
-      numPointsX = Math.ceil(window.innerWidth / unitSize) + 1;
-      numPointsY = Math.ceil(window.innerHeight / unitSize) + 1;
-      unitWidth = Math.ceil(window.innerWidth / (numPointsX - 1));
-      unitHeight = Math.ceil(window.innerHeight / (numPointsY - 1));
+      var unitSize = (backgroundWidth + backgroundHeight) / UNITS_PER_WINDOW;
+      numPointsX = Math.ceil(backgroundWidth / unitSize) + 1;
+      numPointsY = Math.ceil(backgroundHeight / unitSize) + 1;
+      unitWidth = Math.ceil(backgroundWidth / (numPointsX - 1));
+      unitHeight = Math.ceil(backgroundHeight / (numPointsY - 1));
 
       points = [];
 
