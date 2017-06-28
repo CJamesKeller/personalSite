@@ -15,7 +15,7 @@ myApp.controller("BackgroundController", [function() {
   let backgroundHeight;
   let backgroundWidth;
 
-  backgroundHeight = (1.1 * screen.height);
+  backgroundHeight = (1.5 * screen.height);
   backgroundWidth = window.innerWidth;
 
   function onLoad() {
